@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Georama", Roboto, sans-serif;
+}
+
+.scroll {
+  height: 100%;
+  overflow: hidden;
+}
+
+.show {
+  height: auto !important;
+}
+
+.show-arrow {
+  display: block;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 8px #000;
+}
+
+.text-shadow-white {
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.hide-nav-top {
+  display: none;
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+/* Works on Firefox */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #0693e3 transparent;
+}
+
+/* Works on Chrome, Edge, and Safari */
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #0693e3;
+  border-radius: 40px;
+  border: 3px solid transparent;
+}
