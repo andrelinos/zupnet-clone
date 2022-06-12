@@ -49,14 +49,14 @@ export function Web() {
                 className="text-white hover:text-brand-yellow-500 transition-all ease-linear"
               />
             </button>
-            <button
-              type="button"
+            <a
+              href="#customer-center"
               className="rounded-full bg-white border-2 border-white text-brand-blue-500
                          font-medium py-1 px-4 text-sm hover:bg-brand-yellow-500 hover:text-brand-gray-800
                          transition-all ease-linear"
             >
               Central do assinante
-            </button>
+            </a>
           </span>
         </div>
       </div>
@@ -77,14 +77,14 @@ export function Web() {
             </a>
           ))}
           {btVisibility && (
-            <button
-              type="button"
+            <a
+              href="#customer-center"
               className="rounded-full bg-white border-2 border-white text-brand-blue-500
                          font-medium py-1 px-4 text-sm hover:bg-brand-yellow-500 hover:text-brand-gray-800
                          transition-all ease-linear"
             >
               Central do assinante
-            </button>
+            </a>
           )}
         </ul>
       </nav>
